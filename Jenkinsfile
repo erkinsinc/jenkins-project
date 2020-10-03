@@ -1,5 +1,6 @@
 node{
   stage("Test"){
-    sh 'bash simple.sh'
+    checkout scm
+    sh 'bash script.sh'
   }
 }
